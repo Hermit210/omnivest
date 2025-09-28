@@ -8,7 +8,7 @@
       "headers": [
         {
           "key": "Content-Security-Policy",
-          "value": "default-src 'self'; img-src 'self' data: https:; connect-src 'self' wss://relay.walletconnect.com https://*.walletconnect.com;"
+          "value": "default-src 'self'; img-src 'self' data: https: https://omnivest-n6er.vercel.app; connect-src 'self' wss://relay.walletconnect.com https://*.walletconnect.com https://omnivest-n6er.vercel.app;"
         }
       ]
     }
