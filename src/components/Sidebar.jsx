@@ -43,7 +43,7 @@ const Sidebar = () => {
 
             <Link
               to="/"
-              className={`flex items-center gap-2 rounded-lg transition-colors hover:bg-[#2FB574] py-2 px-4 md:py-3 md:px-6 ${location.pathname === '/' ? 'bg-[#2FB574] text-black' : 'text-white'}`}
+              className={`flex items-center gap-2 rounded-lg transition-colors hover:bg-[#6FCF97] py-2 px-4 md:py-3 md:px-6 ${location.pathname === '/' ? 'bg-[#6FCF97] text-black' : 'text-white'}`}
             >
               <Home className="h-5 w-5" />
               <span>Home</span>
@@ -51,7 +51,7 @@ const Sidebar = () => {
 
             <Link
               to="/dashboard"
-              className={`flex items-center gap-2 rounded-lg transition-colors hover:bg-[#2FB574] py-2 px-4 md:py-3 md:px-6 ${location.pathname === '/dashboard' ? 'bg-[#2FB574] text-black' : 'text-white'}`}
+              className={`flex items-center gap-2 rounded-lg transition-colors hover:bg-[#6FCF97] py-2 px-4 md:py-3 md:px-6 ${location.pathname === '/dashboard' ? 'bg-[#6FCF97] text-black' : 'text-white'}`}
             >
               <Package2 className="h-5 w-5" />
               <span>Dashboard</span>
@@ -59,7 +59,7 @@ const Sidebar = () => {
 
             <Link
               to="/posts"
-              className={`flex items-center gap-2 rounded-lg transition-colors hover:bg-[#2FB574] py-2 px-4 md:py-3 md:px-6 ${location.pathname === '/posts' ? 'bg-[#2FB574] text-black' : 'text-white'}`}
+              className={`flex items-center gap-2 rounded-lg transition-colors hover:bg-[#6FCF97] py-2 px-4 md:py-3 md:px-6 ${location.pathname === '/posts' ? 'bg-[#6FCF97] text-black' : 'text-white'}`}
             >
               <Package className="h-5 w-5" />
               <span>Posts</span>
@@ -67,7 +67,7 @@ const Sidebar = () => {
 
             <Link
               to="/projects"
-              className={`flex items-center gap-2 rounded-lg transition-colors hover:bg-[#2FB574] py-2 px-4 md:py-3 md:px-6 ${location.pathname === '/projects' ? 'bg-[#2FB574] text-black' : 'text-white'}`}
+              className={`flex items-center gap-2 rounded-lg transition-colors hover:bg-[#6FCF97] py-2 px-4 md:py-3 md:px-6 ${location.pathname === '/projects' ? 'bg-[#6FCF97] text-black' : 'text-white'}`}
             >
               <Activity className="h-5 w-5" />
               <span>Projects</span>
@@ -76,7 +76,7 @@ const Sidebar = () => {
           <nav className="flex absolute bottom-5 text-lg font-medium w-[200px]">
             <Link
               to="/settings"
-              className={`flex w-[200px] items-center gap-2 rounded-lg transition-colors hover:bg-[#2FB574] py-2 px-4 md:py-3 md:px-6 ${location.pathname === '/settings' ? 'bg-[#2FB574] text-black' : 'text-white'}`}
+              className={`flex w-[200px] items-center gap-2 rounded-lg transition-colors hover:bg-[#6FCF97] py-2 px-4 md:py-3 md:px-6 ${location.pathname === '/settings' ? 'bg-[#6FCF97] text-black' : 'text-white'}`}
             >
               <Settings className="h-5 w-5" />
               <span>Settings</span>

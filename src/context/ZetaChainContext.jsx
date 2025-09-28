@@ -36,7 +36,11 @@ export const ZetaChainProvider = ({ children }) => {
                 throw new Error('MetaMask not found');
             }
 
+<<<<<<< Updated upstream
             // Connect to ZetaChain testnet first using ethers v6 BrowserProvider
+=======
+            // Connect to ZetaChain testnet first
+>>>>>>> Stashed changes
             const provider = new ethers.BrowserProvider(window.ethereum);
             await provider.send("eth_requestAccounts", []);
 

@@ -2,8 +2,8 @@ import { useEffect, useState } from "react";
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import './App.css'
 import Home from './pages/Home';
-import { Login } from './pages/Login';
-import { SignUp } from './pages/SignUp';
+
+
 import { Dashboard } from './pages/Dashboard';
 import ScrollToTop from './ScrollToTop';
 import Loader from "./components/Loader";

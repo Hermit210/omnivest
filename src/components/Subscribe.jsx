@@ -15,7 +15,7 @@ function Subscribe() {
 
           <FadeIn direction="right" delay={0.6} >
             <h2 className="md:text-3xl text-xl text-white font-semibold text-left py-2 z-[5]">
-              New to Finvest? Subscribe to get latest Alerts
+              New to OmniVest? Subscribe to get latest Alerts
             </h2>
           </FadeIn>
 
