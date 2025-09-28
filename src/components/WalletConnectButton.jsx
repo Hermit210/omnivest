@@ -30,11 +30,18 @@ const WalletConnectButton = () => {
         try {
             if (typeof window === 'undefined') return;
 
-            const projectId = process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID;
+            // Prefer Vite env var (VITE_WALLETCONNECT_PROJECT_ID) for Vite builds on Vercel,
+            // fall back to NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID for compatibility.
+            const projectId = (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_WALLETCONNECT_PROJECT_ID)
+                || (typeof process !== 'undefined' && process.env && process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID)
+                || (typeof window !== 'undefined' && window.__WALLETCONNECT_PROJECT_ID__);
+
             if (!projectId) {
-                console.error('Missing NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID');
-                alert('WalletConnect is not configured: missing NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID');
+                console.error('Missing WalletConnect projectId. Set VITE_WALLETCONNECT_PROJECT_ID in Vercel (or NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID locally).');
+                alert('WalletConnect is not configured. Please set VITE_WALLETCONNECT_PROJECT_ID in your deployment settings.');
                 return;
+            } else {
+                console.debug('Using WalletConnect projectId from', (import.meta && import.meta.env && import.meta.env.VITE_WALLETCONNECT_PROJECT_ID) ? 'import.meta.env.VITE_WALLETCONNECT_PROJECT_ID' : (process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID ? 'process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID' : 'window.__WALLETCONNECT_PROJECT_ID__'));
             }
 
             // Initialize WalletConnect v2 provider
