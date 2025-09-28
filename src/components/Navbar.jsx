@@ -21,10 +21,11 @@ function Navbar() {
         {/* Logo */}
         <Link to="/" className="flex flex-row items-center justify-center cursor-pointer">
           <div className="md:h-[50px] h-[30px] md:pr-3 flex items-center justify-center">
-            <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M20 5C15 8 12 12 12 18C12 24 15 28 20 35C25 28 28 24 28 18C28 12 25 8 20 5Z" fill="#6FCF97"/>
-              <rect x="18" y="32" width="4" height="3" fill="#6FCF97"/>
-            </svg>
+            <img
+              className="md:h-[50px] h-[30px] md:pr-3"
+              src="https://res.cloudinary.com/djoebsejh/image/upload/v1721187808/srktgdcijec0zqmlgvbh.png"
+              alt="Logo"
+            />
           </div>
           <h1 className="md:text-3xl text-2xl font-bold text-white cursor-pointer">OmniVest</h1>
         </Link>
