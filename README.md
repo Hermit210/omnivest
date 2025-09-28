@@ -81,6 +81,4 @@ If you want me to:
 - Add a small CI workflow to build and deploy automatically,
 tell me which you'd like and I will proceed.
 
----
-
-_Last updated: Sept 28, 2025_
+deployement open this https://omnivest-n6er.vercel.app/
