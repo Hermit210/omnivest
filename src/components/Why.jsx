@@ -2,11 +2,10 @@ import FadeIn from "./FadeIn"
 
 function Why() {
     return (
-<<<<<<< Updated upstream
         <div className="flex flex-col items-center justify-center bg-[#05140D] w-full  md:p-10 p-5 md:py-20 py-10">
             <FadeIn direction="up" delay={0.2} fullWidth>
                 <h2 className="md:text-5xl text-3xl text-white font-semibold text-center py-3 z-5 ">
-                    These are why <br />you should use Finvest
+                    These are why <br />you should use OmniVest
                 </h2>
             </FadeIn>
 
@@ -68,9 +67,6 @@ function Why() {
                 </div>
             </div>
         </div>
-=======
-        <div></div>
->>>>>>> Stashed changes
     );
 }
 

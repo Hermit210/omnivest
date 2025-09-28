@@ -44,13 +44,6 @@ const WalletConnectButton = () => {
                 showQrModal: true,
             });
 
-<<<<<<< Updated upstream
-            const instance = await web3Modal.connect();
-            const ethersProvider = new ethers.BrowserProvider(instance);
-            setProvider(ethersProvider);
-        } catch (error) {
-            console.error("Failed to connect to wallet:", error);
-=======
             // Connect (shows QR modal / deep-link)
             await provider.connect();
 
@@ -94,7 +87,6 @@ const WalletConnectButton = () => {
         } catch (err) {
             console.error('Wallet connect failed', err);
             alert('Failed to connect wallet. Check console for details.');
->>>>>>> Stashed changes
         }
     };
 
