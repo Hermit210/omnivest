@@ -30,7 +30,7 @@ const WalletConnectButton = () => {
         try {
             if (typeof window === 'undefined') return;
 
-            // Prefer Vite env var (VITE_WALLETCONNECT_PROJECT_ID) for Vite builds on Vercel,
+            // Prefer Vite env var (VITE_WALLETCONNECT_PROJECT_ID) for deployed Vite builds (Vercel).
             // fall back to NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID for compatibility.
             const projectId = (typeof import.meta !== 'undefined' && import.meta.env && import.meta.env.VITE_WALLETCONNECT_PROJECT_ID)
                 || (typeof process !== 'undefined' && process.env && process.env.NEXT_PUBLIC_WALLETCONNECT_PROJECT_ID)
