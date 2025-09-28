@@ -15,11 +15,11 @@ export const WalletProvider = ({ children }) => {
             const web3Modal = new Web3Modal();
             const instance = await web3Modal.connect();
 
-            // Create a provider using ethers.js
-            const ethersProvider = new ethers.providers.Web3Provider(instance);
+            // Create a provider using ethers.js v6 (BrowserProvider)
+            const ethersProvider = new ethers.BrowserProvider(instance);
 
             // Get the signer for sending transactions
-            const userSigner = ethersProvider.getSigner();
+            const userSigner = await ethersProvider.getSigner();
 
             // Get the user's wallet address
             const address = await userSigner.getAddress();

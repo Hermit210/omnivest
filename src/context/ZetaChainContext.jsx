@@ -36,11 +36,11 @@ export const ZetaChainProvider = ({ children }) => {
                 throw new Error('MetaMask not found');
             }
 
-            // Connect to ZetaChain testnet first
-            const provider = new ethers.providers.Web3Provider(window.ethereum);
+            // Connect to ZetaChain testnet first using ethers v6 BrowserProvider
+            const provider = new ethers.BrowserProvider(window.ethereum);
             await provider.send("eth_requestAccounts", []);
 
-            const signer = provider.getSigner();
+            const signer = await provider.getSigner();
             setZetaProvider(provider);
             setZetaSigner(signer);
 
@@ -92,7 +92,7 @@ export const ZetaChainProvider = ({ children }) => {
         // Fetch real balances from multiple chains
         for (const [chainKey, chainInfo] of Object.entries(supportedChains)) {
             try {
-                const provider = new ethers.providers.JsonRpcProvider(chainInfo.rpc);
+                const provider = new ethers.JsonRpcProvider(chainInfo.rpc);
                 const balance = await provider.getBalance(address);
                 const formattedBalance = ethers.utils.formatEther(balance);
                 const usdValue = await convertToUSD(formattedBalance, chainKey);

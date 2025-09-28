@@ -14,7 +14,7 @@ const WalletConnectButton = () => {
             });
 
             const instance = await web3Modal.connect();
-            const ethersProvider = new ethers.providers.Web3Provider(instance);
+            const ethersProvider = new ethers.BrowserProvider(instance);
             setProvider(ethersProvider);
         } catch (error) {
             console.error("Failed to connect to wallet:", error);
