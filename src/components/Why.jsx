@@ -10,9 +10,12 @@ function Why() {
             </FadeIn>
 
             <FadeIn direction="up" delay={0.3} fullWidth>
-                <h3 className="md:text-xl text-sm text-white text-center py-4 z-5 md:w-[50%]">
-                    Bridging Generosity with Cutting-Edge Transparency and Driving Accountability for Lasting Impact.
-                </h3>
+                <div className="text-center py-4">
+                    <h2 className="text-3xl font-bold text-white">Why OmniVest?</h2>
+                    <h4 className="md:text-xl text-lg text-white font-extralight mt-2">
+                        Bridging generosity with cutting-edge transparency and driving accountability for lasting impact.
+                    </h4>
+                </div>
             </FadeIn>
             <FadeIn direction="up" delay={0.4} fullWidth>
                 <img className="relative py-10" src="https://res.cloudinary.com/djoebsejh/image/upload/v1721134750/q18zkrflfd1rca0loy2f.svg" alt="" />

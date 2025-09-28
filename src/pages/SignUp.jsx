@@ -77,7 +77,7 @@ export function SignUp() {
                     <Link to="/" className="absolute top-0 left-0 flex flex-row items-center justify-center cursor-pointer p-5 z-[999]">
                         <FadeIn direction="right" delay={0.3}>
                             <img className="md:h-[50px] h-[30px] md:pr-2" src="https://res.cloudinary.com/djoebsejh/image/upload/v1721187808/srktgdcijec0zqmlgvbh.png" alt="Logo" />
-                            <h1 className="md:text-4xl text-3xl font-semibold text-[#1B7A57] cursor-pointer">Finvest</h1>
+                            <h1 className="md:text-4xl text-3xl font-semibold text-[#1B7A57] cursor-pointer">OmniVest</h1>
                         </FadeIn>
                     </Link>
                     <div className="h-auto relative text-center z-[5] max-w-md mx-auto">
@@ -116,7 +116,7 @@ export function SignUp() {
                         <img className="absolute overflow-hidden right-0 z-0" src="https://res.cloudinary.com/djoebsejh/image/upload/v1721133535/duitolguodf7th7fzzek.svg" alt="" />
                         <div className="relative mx-auto flex flex-col items-center justify-center w-full max-w-[90%] min-h-[500px] gap-3 z-10 animate-fade-in">
                             <h1 className="neon-mist md:text-7xl text-5xl text-white font-semibold text-center py-3 z-[5]">
-                                Welcome to Finvest
+                                Welcome to OmniVest
                             </h1>
                             <FadeIn direction="up" delay={0.3} fullWidth>
                                 <h3 className="text-3xl text-white text-center py-3 z-[5]">

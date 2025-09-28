@@ -38,7 +38,7 @@ const Sidebar = () => {
                 src="https://res.cloudinary.com/djoebsejh/image/upload/v1721187808/srktgdcijec0zqmlgvbh.png"
                 alt="Logo"
               />
-              <span className="text-white">Finvest</span>
+              <span className="text-white">OmniVest</span>
             </Link>
 
             <Link
@@ -97,7 +97,7 @@ const Sidebar = () => {
               src="https://res.cloudinary.com/djoebsejh/image/upload/v1721187808/srktgdcijec0zqmlgvbh.png"
               alt="Logo"
             />
-            {isExpanded && <motion.span initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }} className="text-white text-lg pl-1">Finvest</motion.span>}
+            {isExpanded && <motion.span initial={{ opacity: 0, x: -10 }} animate={{ opacity: 1, x: 0 }} transition={{ duration: 0.5 }} className="text-white text-lg pl-1">OmniVest</motion.span>}
           </Link>
           <Button
             size="icon"

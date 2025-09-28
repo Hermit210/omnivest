@@ -79,7 +79,7 @@ const DonationModal = ({ isOpen, onClose, projectId }) => {
 
     const saveTransactionToBackend = async (transactionHash, amountETH, amountUSD) => {
         try {
-            const response = await fetch("https://finvest-backend.onrender.com/transactions", {
+            const response = await fetch("https://omnivest-backend.onrender.com/transactions", {
                 method: "POST",
                 headers: {
                     "Content-Type": "application/json",
