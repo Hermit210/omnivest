@@ -8,7 +8,7 @@ OmniVest is a cross-chain investment platform built on ZetaChain's omnichain arc
 - **AI Auto-Fill:** AI-powered project and post submission to minimize manual effort.
 - **Full Control & Minimal Risk:** Dissolve contracts and reclaim funds if needed.
 - **Transparency:** All transactions are recorded on-chain and viewable at any time.
-# OmniVest (formerly Finvest)
+# OmniVest 
 
 This repository contains the OmniVest web application: a cross-chain investment platform built on ZetaChain's omnichain architecture.
 
