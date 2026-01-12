@@ -45,7 +45,7 @@ This README was updated to explain recent changes performed during a rebranding 
    npm run dev
    # Open http://localhost:5173 or the port Vite prints (it may shift to 5174 if 5173 is in use)
    ```
-2. Frontend (production build):
+2.  Frontend (production build):
    ```powershell
    cd frontend
    npm install
